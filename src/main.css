@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+@plugin './hero.ts';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+:root {
+    --focus-border: hsl(var(--heroui-focus)); /* allotment custom style */
+    --primary-gradient: linear-gradient(to right, #07b6d5 0%, #3c83f6 90%);
+}
+
+html, body {
+    height: 100vh;
+}
+
+@theme inline { /* now we can apply our colors to react elements, like this 'bg-editor' or 'border-editor-b' and etc, see code */
+    --background-image-primary-gradient: var(--primary-gradient);
+
+    --color-editor: var(--editor);
+    --color-editor-2: var(--editor-2);
+    --color-editor-3: var(--editor-3);
+    --color-editor-b: var(--editor-b);
+    --color-editor-txt: var(--editor-txt);
+    --color-editor-txt-2: var(--editor-txt-2);
+    --color-editor-txt-3: var(--editor-txt-3);
+    
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-2: var(--sidebar-2);
+    --color-sidebar-txt: var(--sidebar-txt);
+    --color-sidebar-txt-2: var(--sidebar-txt-2);
+}
+
+@layer utilities {
+    .light {
+        --editor: #fafafa;
+        --editor-2: #f5f5f5;
+        --editor-3: #e9e9e9;
+        --editor-b: #a6a6a6;
+        --editor-txt: #595959;
+        --editor-txt-2: #404040;
+        --editor-txt-3: #262626;
+
+        --sidebar: #1f2937;
+        --sidebar-2: #43556f;
+        --sidebar-txt: #a6acb8;
+        --sidebar-txt-2: #ecf2fb;
+    }
+
+    .dark {
+        --editor: #161b25;
+        --editor-2: #1a1f2b;
+        --editor-3: #202733;
+        --editor-b: #07090c;
+        --editor-txt: #919eb9;
+        --editor-txt-2: #b0bacd;
+        --editor-txt-3: #cfd5e3;
+
+        --sidebar: #0e131b;
+        --sidebar-2: #313b4b;
+        --sidebar-txt: #a6acb8;
+        --sidebar-txt-2: #ecf2fb;
+    }
+}
+
+@layer utilities {
+    .custom-input {
+        @apply
+        transition-none
+        bg-editor
+        text-editor-txt-2
+        border-1
+        border-editor-b
+        hover:border-editor-b
+        data-[hover=true]:border-editor-b
+        group-data-[focus=true]:border-editor-b
+        group-data-[focus-visible=true]:border-editor-b
+        group-data-[focus-visible=true]:ring-0
+        group-data-[focus-visible=true]:ring-offset-0
+        group-data-[focus-visible=true]:ring-transparent
+        group-data-[focus-visible=true]:outline-2
+        group-data-[focus-visible=true]:outline-offset-0
+        group-data-[focus-visible=true]:outline-[hsl(var(--heroui-focus))]
+    }
+
+    .custom-btn {
+        @apply
+        transition-none
+        bg-editor
+        text-editor-txt-2
+        border-1
+        border-editor-b
+        data-[focus-visible=true]:border-editor-b
+        data-[focus-visible=true]:ring-0
+        data-[focus-visible=true]:ring-offset-0
+        data-[focus-visible=true]:outline-2
+        data-[focus-visible=true]:outline-offset-0
+        data-[focus-visible=true]:outline-[hsl(var(--heroui-focus))]
+    }
+
+    .custom-btn-sidebar {
+        @apply
+        transition-none
+        w-14
+        h-14
+        bg-transparent
+        text-sidebar-txt
+        border-0
+        data-[focus-visible=true]:ring-0
+        data-[focus-visible=true]:ring-offset-0
+        data-[focus-visible=true]:outline-2
+        data-[focus-visible=true]:outline-offset-0
+        data-[focus-visible=true]:outline-sidebar-txt
+    }
+
+    .custom-btn-sidebar-selected {
+        @apply
+        bg-sidebar-2
+        text-sidebar-txt-2
+    }
+}
