@@ -20,8 +20,6 @@ All color settings for the themes are located in the `main.css` file. Additional
 - HeroUI 2.8
 - Vite 7.0
 
-This boilerplate provides a solid starting point for your PHP projects, saving you time and effort in setting up a modern development environment. Focus on writing clean and efficient code while Gulp and Twig handle the heavy lifting.
-
 
 ## License
 
