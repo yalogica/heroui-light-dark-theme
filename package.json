@@ -1,0 +1,40 @@
+{
+    "name": "heroui-light-dark-theme",
+    "author": "Max Lawrence",
+	"homepage": "https://yalogica.com/",
+	"license": "MIT",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4.1.11",
+        "@tailwindcss/vite": "^4.1.11",
+        "@types/node": "^24.1.0",
+        "@types/react": "^19.1.9",
+        "@types/react-dom": "^19.1.7",
+        "@vitejs/plugin-react": "^4.7.0",
+        "postcss": "^8.5.6",
+        "sass": "^1.89.2",
+        "tailwindcss": "^4.1.11",
+        "typescript": "^5.8.3",
+        "vite": "^7.0.6",
+        "vite-tsconfig-paths": "^5.1.4"
+    },
+    "dependencies": {
+        "@heroui/react": "^2.8.2",
+        "@heroui/theme": "^2.4.20",
+        "@heroui/use-theme": "^2.1.10",
+        "allotment": "^1.20.4",
+        "clsx": "^2.1.1",
+        "framer-motion": "^12.23.12",
+        "lucide-react": "^0.534.0",
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1",
+        "tailwind-merge": "^3.3.1"
+    }
+}
