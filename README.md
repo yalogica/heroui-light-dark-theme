@@ -21,6 +21,12 @@ All color settings for the themes are located in the `main.css` file. Additional
 - Vite 7.0
 
 
+Enhance your React development with this clean and practical boilerplate. It showcases seamless light and dark theme integration using the HeroUI component library, offering a ready-to-use foundation for building modern, theme-aware web applications with ease.
+
+Powered by Vite and TypeScript, this template provides a fast, efficient development experience with hot module replacement and streamlined workflows. Whether you're starting a new project or exploring theme customization, this boilerplate makes it simple to get up and running - just clone, install, and start coding.
+
+Perfect for developers who want to implement dynamic theme switching while maintaining full control over styling and component behavior.
+
 ## License
 
 [MIT](LICENSE)
