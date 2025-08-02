@@ -40,6 +40,7 @@ export default heroui({
                 },
                 background: "#f0f0f0",
                 foreground: "#272727",
+                focus: "#006fee"
             }
         },
         dark: {
